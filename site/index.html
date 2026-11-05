@@ -1,0 +1,44 @@
+<!doctype html>
+<!-- Copyright (c) 2026 Christian Reitwiessner. Authors: Christian Reitwiessner. -->
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="author" content="Christian Reitwiessner">
+<meta name="description" content="An overview-first, interactive explanation of the reported ETH-refutation argument. Animated slides, optional narration, and precisely stated mathematical details.">
+<meta name="theme-color" content="#f6f4ef"><title>An algebraic escape · The ETH argument</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="vendor/katex.min.css"><link rel="stylesheet" href="style.css">
+<script defer src="vendor/katex.min.js"></script><script defer src="vendor/auto-render.min.js"></script>
+<script defer src="slides.js"></script><script defer src="audio.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<a href="#slide-title" class="skip">Skip to slide</a>
+<header class="topbar">
+ <button id="menu" class="icon-button mobile-only" aria-label="Open slide index" aria-expanded="false" aria-controls="sidebar">☰</button>
+ <a class="brand" href="#the-plan"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path d="M4 23L14 7L24 23M8 17h12" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="24" cy="23" r="3" fill="currentColor"/></svg><span>AN ALGEBRAIC ESCAPE<small>The ETH argument, step by step</small></span></a>
+ <div class="top-actions"><span class="self-paced">20 slides · self-paced</span><button id="tour" class="tour-button" aria-pressed="false"><span aria-hidden="true">▶</span> <span id="tour-label">Narrated tour</span></button><button id="theme" class="icon-button" aria-label="Switch to dark theme" title="Switch theme">◐</button></div>
+</header>
+<div class="layout">
+ <aside id="sidebar" class="sidebar" aria-label="Slide navigation">
+  <div class="sidebar-head"><span class="small-label">THE ARGUMENT</span><button id="menu-close" class="icon-button mobile-only" aria-label="Close slide index">×</button></div>
+  <nav id="index" aria-label="Slide index"></nav>
+  <div class="sidebar-bottom"><button id="sources-open" class="text-button">Sources & scope ↗</button><a href="assets/downloads/companion.pdf" target="_blank" rel="noopener">Quantified companion ↗</a><small>Exposition by<br><strong>Christian Reitwiessner</strong></small></div>
+ </aside>
+ <div id="scrim" class="scrim" hidden></div>
+ <main id="main">
+  <div class="slide-heading"><div class="eyebrow"><span id="chapter"></span><span id="slide-number"></span></div><h1 id="slide-title" tabindex="-1"></h1><p id="lead" class="lead"></p></div>
+  <div class="why"><span class="small-label">WHY THIS STEP?</span><p id="why"></p></div>
+  <section class="workspace" aria-label="Animated slide">
+   <div class="visual-panel"><div class="visual-top"><span class="small-label">FOLLOW THE IDEA</span><button id="replay" class="text-button" aria-label="Replay current animation">↺ Replay</button></div><div id="stage" class="stage"></div><div id="figure-controls" class="figure-controls"></div><p id="figure-caption" class="figure-caption"></p></div>
+   <div class="explanation"><div class="step-marker"><span id="step-label"></span><div id="step-dots" class="step-dots" aria-label="Reveal steps"></div></div><h2 id="step-title"></h2><p id="step-body"></p><div id="equation" class="equation" aria-label="Mathematical statement"></div><details id="transcript"><summary>Narration transcript</summary><p id="transcript-text"></p></details><div class="audio-status" id="audio-status" role="status"></div></div>
+  </section>
+  <section class="next-reason"><span class="small-label">WHERE WE GO NEXT — AND WHY</span><p id="next-reason"></p></section>
+  <details id="formal" class="formal"><summary>Formal statement & mathematical details</summary><div id="formal-content"></div></details>
+  <footer class="slide-footer"><button id="previous" class="secondary">← Back</button><div class="keyboard-hint"><kbd>←</kbd> <kbd>→</kbd> to explore <span>·</span> <button id="motion" class="text-button" aria-pressed="false">Reduce motion</button></div><button id="next" class="primary">Next step <span aria-hidden="true">→</span></button></footer>
+  <p class="credit">Authors: Christian Reitwiessner <span>·</span> Mathematical sources retain their original attribution.</p>
+ </main>
+</div>
+<dialog id="sources-dialog"><button id="sources-close" class="dialog-close icon-button" aria-label="Close sources">×</button><span class="small-label">SOURCES & SCOPE</span><h2>What is shown, what is stated.</h2><p>This is an exposition of the reported direct SAT argument. The spectral and placement results are stated technical lemmas. Group separation and Hermite uniqueness are explained; small-support recovery is demonstrated, with the general bound and exact-arithmetic estimates stated.</p><p>The quantified companion includes the full hypotheses and supplementary spectral construction. This site does not claim an independent formal audit or a practical SAT speedup.</p><ul class="sources-list"><li><a href="https://shivakintali.github.io/papers/ETH.pdf" target="_blank" rel="noopener">Shiva Kintali — simplified direct SAT proof ↗</a><span>Main mathematical route and fixed-parameter analysis.</span></li><li><a href="https://msellke.com/Files/ETH-False-Slides.pdf" target="_blank" rel="noopener">Mark Sellke — proof outline ↗</a><span>Group separation, deformation, and interpolation.</span></li><li><a href="https://www.cs.cmu.edu/~odonnell/some_eth_false_exposition.pdf" target="_blank" rel="noopener">Ryan O’Donnell — matrix/permanent exposition ↗</a><span>Complementary formulation used for cross-checking.</span></li><li><a href="https://github.com/openai/math/tree/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026" target="_blank" rel="noopener">OpenAI — original manuscript ↗</a><span>The original reported result.</span></li></ul><div class="download-links"><a href="assets/downloads/companion.pdf" target="_blank" rel="noopener">Companion PDF</a><a href="assets/downloads/narration.txt" download>Complete revised script</a><a href="assets/downloads/sources.txt" download>Source record</a></div><p class="credit">Exposition and new files: Christian Reitwiessner.<br>Optional synthetic narration: Piper lessac-high. No external account is needed to read or listen.</p></dialog>
+<audio id="narrator" preload="none"></audio><div id="announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+<noscript><div class="no-script"><h1>An algebraic escape</h1><p>The animated slides require JavaScript. You can still read the <a href="assets/downloads/companion.pdf">quantified companion</a> or <a href="assets/downloads/narration.txt">complete script</a>.</p></div></noscript>
+</body></html>

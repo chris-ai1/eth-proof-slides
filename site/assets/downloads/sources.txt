@@ -1,0 +1,28 @@
+Authors: Christian Reitwiessner
+Mathematical sources retain their original authorship.
+Sources read 5 November 2026. Source PDFs are in the parent research/ directory.
+
+Kintali
+https://shivakintali.github.io/papers/ETH.pdf
+Main proof route; precise fixed-parameter recovery, spectral construction, schedules, and bit arithmetic.
+
+Sellke
+https://msellke.com/Files/ETH-False-Slides.pdf
+Visual motivation: group separation, counting deformation, swaps, and interpolation.
+
+O’Donnell
+https://www.cs.cmu.edu/~odonnell/some_eth_false_exposition.pdf
+Cross-check of the parallel matrix/permanent route; it is not used as a black-box reduction in this talk.
+
+OpenAI manuscript
+https://raw.githubusercontent.com/openai/math/main/preprints/The-Exponential-Time-Hypothesis-is-False-October-25-2026/paper.pdf
+Original reported result; its sharper runtime and general counting/space claims are outside this presentation.
+
+Community examination
+https://ethdiscussion.blog/
+Context and links. Examination organizers distinguish organizing scrutiny from certifying a result.
+
+kintali.pdf SHA256 481325aa6e96e27408032ee78a2ff88cc0c3ee8fb076780c6588d713fae53f6f
+odonnell.pdf SHA256 e11758401b2b1407a3f7f85da932089c5924214cc96270dd47883880feb31ed4
+original.pdf SHA256 5b1612dc2eebb2cad5b4cbe62d1fed2982f01ab1908c26f70010a651487e8123
+sellke.pdf SHA256 249bdf56aaa27cb5fd12c10715009955eb445c7c1d9b5d3e71ff2c7e1a8bec38

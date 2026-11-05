@@ -1,0 +1,7 @@
+# Authors: Christian Reitwiessner
+* text=auto
+*.mp3 binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
+*.ttf binary

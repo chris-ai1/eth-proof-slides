@@ -1,0 +1,7 @@
+# Authors: Christian Reitwiessner
+node_modules/
+scripts/.audio-cache/
+scripts/*.log
+scripts/*.png
+scripts/qa/
+*.zip
